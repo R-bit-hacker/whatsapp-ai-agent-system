@@ -4,7 +4,7 @@ Production-ready, full-stack WhatsApp AI customer engagement and agent managemen
 
 ---
 
-## 🌟 Executive Overview
+## Executive Overview
 
 This system powers autonomous, context-aware WhatsApp customer interactions for online commerce and support operations. It features:
 
@@ -21,7 +21,7 @@ This system powers autonomous, context-aware WhatsApp customer interactions for 
 
 ---
 
-## 🏗️ Architecture & Pipeline Flow
+## Architecture & Pipeline Flow
 
 ```text
                                   +-----------------------------+
@@ -58,7 +58,7 @@ This system powers autonomous, context-aware WhatsApp customer interactions for 
 
 ---
 
-## 🗄️ Database Structure & Data Lifecycle
+## Database Structure & Data Lifecycle
 
 The relational schema is configured in `backend/models.py` using **SQLAlchemy** and **SQLite** (easily migratable to PostgreSQL via `DATABASE_URL`).
 
@@ -150,7 +150,7 @@ sequenceDiagram
 
 ---
 
-## ⚙️ Environment Variables Configuration (`backend/.env`)
+## Environment Variables Configuration (`backend/.env`)
 
 The project supports both OpenAI and Groq seamlessly. When an API key starting with `gsk_` is detected, the backend automatically connects to `https://api.groq.com/openai/v1` and uses `llama-3.3-70b-versatile` for blazing-fast function calling.
 
@@ -171,7 +171,7 @@ WHATSAPP_VERIFY_TOKEN=my_secure_verify_token
 
 ---
 
-## 🚀 Step-by-Step Setup Instructions
+## Step-by-Step Setup Instructions
 
 ### 1. Backend Setup (FastAPI)
 
@@ -236,7 +236,7 @@ npm run dev
 
 ---
 
-## 🧪 Evaluator & Interview Testing Guide
+## Evaluator & Interview Testing Guide
 
 Meta's Developer Portal currently blocks direct mobile-to-webhook delivery in Unpublished/Dev apps unless the recipient is explicitly registered in the Meta App Test Numbers list and Business Verification is finalized.
 
@@ -253,9 +253,9 @@ To provide a 100% reliable, zero-friction review experience, the project provide
 
 3. Click any of the **1-Click Test Scenarios**:
 
-   - 🛍️ *"What products do you have in stock and their prices?"* → Triggers `get_products_info` and returns the catalog with prices.
-   - 📦 *"Check status of my order #9999"* → Triggers `check_order_status` for order 9999 (Rubaisha, Shipped via DHL).
-   - 🚚 *"Where is my order ORD-9988?"* → Triggers `check_order_status` for ORD-9988 (Processing).
+   -  *"What products do you have in stock and their prices?"* → Triggers `get_products_info` and returns the catalog with prices.
+   -  *"Check status of my order #9999"* → Triggers `check_order_status` for order 9999 (Rubaisha, Shipped via DHL).
+   -  *"Where is my order ORD-9988?"* → Triggers `check_order_status` for ORD-9988 (Processing).
 
 4. Click **"Send Message"**:
 
@@ -285,7 +285,7 @@ ngrok http 8000
 
 ---
 
-## 🛠️ Integrated LLM Tools & Mock Data
+## Integrated LLM Tools & Mock Data
 
 ### 1. `get_products_info(query: str)`
 
@@ -305,7 +305,7 @@ ngrok http 8000
 
 ---
 
-## 📋 API Reference Summary
+## API Reference Summary
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
