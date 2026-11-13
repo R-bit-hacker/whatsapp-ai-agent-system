@@ -1,0 +1,10 @@
+# Environments & Cache
+backend/venv/
+backend/__pycache__/
+frontend/node_modules/
+.DS_Store
+
+# Secret Keys (DO NOT PUSH)
+backend/.env
+
+# (Note: .env.example aur whatsapp_system.db GitHub par jayenge)
